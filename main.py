@@ -9,7 +9,7 @@ def scrape_carhartt_website():
     tag_name = 'car-product-grid-item'
     elements = soup.find_all(tag_name)
     for element in elements:
-        print(element)
+        print(element.find_all('img')[2]['alt'])
 
 if __name__ == '__main__':
     scrape_carhartt_website()
