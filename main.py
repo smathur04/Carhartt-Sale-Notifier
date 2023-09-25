@@ -1,5 +1,5 @@
-import process
+import state
 
 
 if __name__ == '__main__':
-    process.process_scraped_data()
+    state.does_state_change()
